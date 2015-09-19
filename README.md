@@ -10,23 +10,23 @@ This could be integrated into SublimeText and other idea as a shortcut to improv
 
 Install xautomation (used to send keystrokes)
 
-    sudo apt-get install xautomation
+    $ sudo apt-get install xautomation
 
 Install pygtk (used to change focus to browser window)
 
-    sudo apt-get install python-gtk2-dev python-wnck
+    $ sudo apt-get install python-gtk2-dev python-wnck
 
 Clone this project
 
 # Usage
 
-    ./refresh-browser.py
+    $ ./refresh-browser.py
 
 ## Autokey
 
 Install Autokey
 
-    sudo apt-get install autokey-gtk
+    $ sudo apt-get install autokey-gtk
 
 Add following script
 
