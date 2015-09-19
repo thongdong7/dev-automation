@@ -22,10 +22,32 @@ Clone this project
 
     ./refresh-browser.py
 
-For Sublime Text, go to `Tools` > `Build System` > `New Build System`
+## Autokey
+
+Install Autokey
+
+    sudo apt-get install autokey-gtk
+
+Add following script
+
+    import subprocess
+    from time import sleep
+    
+    # Save current file
+    keyboard.send_keys("<ctrl>+s")
+    
+    # Sleep to ensure the code is built (by gulp, for example)
+    sleep(0.2)
+    
+    subprocess.call(["/usr/bin/python", "/path/to/dev-automation/refresh-browser.py"])
+    
+## Sublime Text
+
+Go to `Tools` > `Build System` > `New Build System`
 
     {
         "shell_cmd": "/usr/bin/python <path_to_dev_automation>/refresh-browser.py"
     }
 
 When you build, it will switch to browser and refresh
+
